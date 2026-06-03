@@ -1,0 +1,204 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    min-height:100vh;
+    padding:40px;
+    transition:.4s;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+h1{
+    color:#333;
+}
+
+.form-section{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+input,
+select{
+    flex:1;
+    min-width:200px;
+    padding:14px;
+    border-radius:12px;
+    border:2px solid #ddd;
+    font-size:16px;
+}
+
+button{
+    border:none;
+    padding:14px 25px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+    color:white;
+    background:#667eea;
+}
+
+button:hover{
+    transform:scale(1.03);
+}
+
+.dashboard{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:25px;
+}
+
+.card{
+    flex:1;
+    min-width:220px;
+    border-radius:18px;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.total-card{
+    background:linear-gradient(135deg,#36d1dc,#5b86e5);
+}
+
+.interview-card{
+    background:linear-gradient(135deg,#f7971e,#ffd200);
+}
+
+.selected-card{
+    background:linear-gradient(135deg,#11998e,#38ef7d);
+}
+
+#search{
+    width:100%;
+    margin-bottom:20px;
+}
+
+.job-card{
+    background:#f9f9ff;
+    padding:20px;
+    border-radius:15px;
+    margin-top:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    border-left:7px solid #667eea;
+}
+
+.job-card h3{
+    color:#4f63d8;
+}
+
+.job-card p{
+    margin-top:8px;
+}
+
+.status{
+    display:inline-block;
+    padding:7px 14px;
+    border-radius:20px;
+    color:white;
+    margin-top:10px;
+    font-size:14px;
+}
+
+.applied{
+    background:#3498db;
+}
+
+.interview{
+    background:#f39c12;
+}
+
+.rejected{
+    background:#e74c3c;
+}
+
+.selected{
+    background:#27ae60;
+}
+
+.action-buttons{
+    margin-top:15px;
+    display:flex;
+    gap:10px;
+}
+
+.edit-btn{
+    background:#f39c12;
+}
+
+.delete-btn{
+    background:crimson;
+}
+
+#themeBtn{
+    background:#222;
+}
+
+canvas{
+    margin-top:20px;
+    background:white;
+    padding:20px;
+    border-radius:20px;
+}
+
+#toast{
+    position:fixed;
+    top:20px;
+    right:20px;
+    background:#27ae60;
+    color:white;
+    padding:15px 25px;
+    border-radius:10px;
+    opacity:0;
+    transition:.4s;
+}
+
+/* DARK MODE */
+
+.dark{
+    background:#111827;
+}
+
+.dark .container{
+    background:#1f2937;
+}
+
+.dark h1,
+.dark p,
+.dark h3{
+    color:white;
+}
+
+.dark input,
+.dark select{
+    background:#374151;
+    color:white;
+    border:none;
+}
+
+.dark .job-card{
+    background:#2b3444;
+}
