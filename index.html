@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Job Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="top-bar">
+        <h1>🚀 Smart Job Tracker</h1>
+
+        <button id="themeBtn" onclick="toggleTheme()">
+            🌙 Dark Mode
+        </button>
+    </div>
+
+    <div class="form-section">
+
+        <input
+            type="text"
+            id="company"
+            placeholder="🏢 Company Name"
+        >
+
+        <input
+            type="text"
+            id="role"
+            placeholder="💼 Job Role"
+        >
+
+        <select id="status">
+            <option value="Applied">Applied</option>
+            <option value="Interview">Interview</option>
+            <option value="Rejected">Rejected</option>
+            <option value="Selected">Selected</option>
+        </select>
+
+        <button onclick="addJob()">
+            Add Job
+        </button>
+
+    </div>
+
+    <div class="dashboard">
+
+        <div class="card total-card">
+            <h2 id="totalJobs">0</h2>
+            <p>Total Jobs</p>
+        </div>
+
+        <div class="card interview-card">
+            <h2 id="interviews">0</h2>
+            <p>Interviews</p>
+        </div>
+
+        <div class="card selected-card">
+            <h2 id="selected">0</h2>
+            <p>Selected</p>
+        </div>
+
+    </div>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 Search Company"
+        onkeyup="renderJobs()"
+    >
+
+    <canvas id="jobChart"></canvas>
+
+    <div id="jobList"></div>
+
+</div>
+
+<div id="toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
